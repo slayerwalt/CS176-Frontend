@@ -1,3 +1,10 @@
 # 2022_Spring_Frontend
 ---
-## HW-1 用`html`+`css`实现网页的一个模块
+## Course1 - Basic introduction to frontend
+HW：None
+
+## Course2 - Basic HTML and CSS
+HW: Implement a basic static webpage with HTML and CSS
+
+## Course3 - Basic JavaScript
+HW: Implement a game with JavaScript.
