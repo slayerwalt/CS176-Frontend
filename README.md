@@ -1,4 +1,4 @@
-# 2022_Spring_Frontend
+# CS176-Frontend
 ---
 ## Course1 - Basic introduction to frontend
 HW：None
