@@ -1,0 +1,104 @@
+.topmenu{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    /*border-radius: 20px;*/
+    /*background: lightblue;*/
+    background-image: linear-gradient(lightblue,pink);
+    opacity: 0.8;
+}
+.topmenubutton{
+    top: 20%;
+    margin-left:10%;
+    /*height: 60%;*/
+    /*width: 5%;*/
+    /*background-image: linear-gradient(lightblue,lightseagreen);*/
+    font-family: "Times New Roman";
+    /*border: white;*/
+    position: relative;
+    /*background-color: rgba(red: 1, blue : 1,green :1, alpha: s0);*/
+    opacity: 1;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.show{
+    margin-top:0;
+    /*background: black;*/
+    width: 40%;
+    height: 55%;
+    margin-left: 30%;
+    position: relative;
+    clear: both;
+}
+#homepagebutton{
+    float: left;
+    margin-left: 1%;
+
+}
+#searchline{
+    position: relative;
+    margin-left: 0;
+    width: 70%;
+    float: left;
+    margin-top: 5px;
+}
+#searchbutton{
+    float: left;
+    margin-left: 2px;
+    /*height: 50%;*/
+}
+.searchdiv{
+    float: left;
+    margin-left: 26%;
+    width: 30%;
+    top : 20%;
+    position: relative;
+}
+#loginbutton{
+    top: 15%;
+    color: greenyellow;
+    position: relative;
+    float: left;
+}
+.personalbutton{
+    float: left;
+    top:30%;
+    margin-left: 5%;
+    position: relative;
+}
+#PersonalCenter{
+
+}
+.contain{
+    margin-top: 1px;
+    margin-left: 5%;
+    width: 90%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: whitesmoke;
+    box-shadow: 5px 5px 5px gray;
+    position: relative;
+}
+.tag{
+    background: whitesmoke;
+    color: black;
+    text-align: center;
+    /*position: relative;*/
+}
+.tag a{
+    left: 40%;
+    position: relative;
+}
+td{
+    text-align: center;
+}
+.uploadcase{
+    right: 5%;
+    position: absolute;
+    width: 25%;
+}

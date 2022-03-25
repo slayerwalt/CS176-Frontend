@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+        }
+        .cell {
+            width: 50px;
+            height: 50px;
+            outline: 1px solid black;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            display: flex;
+        }
+        .image-container {
+            width: 30px;
+            height: 30px;
+        }
+        .image-container img {
+            width: 30px;
+            height: 30px;
+        }
+        .footer {
+            margin-top: 8px;
+        }
+        .title {
+            /* text-align: center; */
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 150px;
+        }
+        .rule{
+            margin-left: 20px;
+            min-width: 300px;
+            outline: 3px solid black;
+            height: 400px;
+            width: 600px;
+        }
+        .rule>h1{
+            text-align: center;
+        }
+        .rule>p{
+            text-align: left;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .button{
+            transition: transform 150ms;
+            width: 200px;
+            height: 40px;
+            border-radius: 6px;
+            border: none;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 500;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1 class=""title>Crazy Prize</h1>
+    <div class="container">
+        <div class="map"></div>
+        <div class="rule">
+            <h1>规则</h1>
+            <p>1. <img src="../image/prize.svg" width="20" height="20" align="top">这是一奖杯，吃了有加分！</p>
+            <p>2. <img src="../image/robot.svg" width="20" height="20" align="top">机器人。这是玩家操控的角色，可通过 "↑""↓""←""→"进行操控。</p>
+            <!-- <p>3. <img src="../image/boom.svg" width="20" height="20" align="top">炸弹。玩家不能触碰炸弹，否则游戏结束。</p> -->
+            <p>3. 游戏进行时间为10秒。</p>
+            <!-- <button class="button" onclick="startGame()">Start!</button> -->
+        </div>
+    </div>
+    <div class="footer">
+        <button class="button" onclick="startGame()">start game</button>
+        <span class="timer"></span>
+        <span class="score"></span>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
