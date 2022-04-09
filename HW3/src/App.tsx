@@ -94,33 +94,48 @@ function App() {
   };
 
   return (
-    <section className="todoapp">
-      <Header
-        newTodo={newTodo}
-        handleNewTodoChange={handleNewTodoChange}
-        handleNewTodoKeyDown={handleNewTodoKeyDown}
-      />
-      {Boolean(model.todos.length) && (
-        <>
-          <Main
-            editing={editing}
-            todos={model.todos}
-            onToggle={onToggle}
-            onToggleAll={onToggleAll}
-            onDestroy={onDestroy}
-            onEdit={onEdit}
-            onSave={onSave}
-            onCancel={onCancel}
-          />
-          <Footer
-            activeTodoCount={activeTodoCount}
-            nowShowing={nowShowing}
-            onClearCompleted={onClearCompleted}
-            hasCompletedTodos={completedTodoCount !== 0}
-          />
-        </>
-      )}
-    </section>
+    <div>
+      <section className="todoapp">
+        <Header
+          newTodo={newTodo}
+          handleNewTodoChange={handleNewTodoChange}
+          handleNewTodoKeyDown={handleNewTodoKeyDown}
+        />
+        {Boolean(model.todos.length) && (
+          <>
+            <Main
+              editing={editing}
+              todos={model.todos}
+              onToggle={onToggle}
+              onToggleAll={onToggleAll}
+              onDestroy={onDestroy}
+              onEdit={onEdit}
+              onSave={onSave}
+              onCancel={onCancel}
+            />
+            <Footer
+              activeTodoCount={activeTodoCount}
+              nowShowing={nowShowing}
+              onClearCompleted={onClearCompleted}
+              hasCompletedTodos={completedTodoCount !== 0}
+            />
+          </>
+        )}
+      </section>
+      <footer className="info">
+        <p>借鉴了老师的代码</p>
+        <p>
+          Created by{' '}
+          <a href="https://github.com/slayerwalt/CS176-Frontend/tree/master/HW3">
+            {' '}
+            slayer
+          </a>
+        </p>
+        <p>
+          Part of <a href="http://todomvc.com">TodoMVC</a>
+        </p>
+      </footer>
+    </div>
   );
 }
 
