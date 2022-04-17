@@ -1,0 +1,12 @@
+{
+  "name": "tiny-application-layer-protocol",
+  "description": "实现自己的应用层协议和解析器",
+  "main": "protocol.js",
+  "directories": {
+    "test": "test"
+  },
+  "files": ["protocol.js"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
