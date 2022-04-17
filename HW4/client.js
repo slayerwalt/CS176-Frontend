@@ -1,6 +1,6 @@
 
 const net = require('net');
-const { parseStateMachine, packet } = require('../protocol');
+const { parseStateMachine, packet } = require('./protocol');
 async function test() {
   const socket = net.connect({ port: 8080 });
   socket.on('error', (data) => {

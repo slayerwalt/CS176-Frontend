@@ -1,6 +1,6 @@
 
 const net = require('net');
-const { parseStateMachine, packet } = require('../protocol');
+const { parseStateMachine, packet } = require('./protocol');
 
 net.createServer(function (socket) {
   const psm = new parseStateMachine({
