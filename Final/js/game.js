@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     createBoard()
 
 
-    //根据元素显示颜色
+    //根据元素显示图片
     var timer = setInterval(changeColor = () => {
         for (let i = 0; i < cells.length; i++) {
             if (cells[i].innerHTML == 0) {
