@@ -1,0 +1,115 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 456px;
+    height: 456px;
+    background-color: #BBADA0;
+    border: 7px solid #BBADA0;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.grid div {
+    width: 100px;
+    height: 100px;
+    margin: 7px;
+    border-radius: 3px;
+    background-color: #EEE4DA;
+    background-size:100px 100px;
+    color: #afa192; 
+    font-weight: bold;
+    text-align: center;
+    font-size: 0px;
+    line-height: 1.6;
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    height: 580px;
+    width: 200px;
+    background-color: #d7ba9f;
+    border: 7px solid #d7ba9f;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 50px;
+    justify-content: center;
+    font-family: "Clear Sans", "Helvetica Neue";
+}
+
+.correspond {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    margin-left: 40px;
+    left: 0;
+}
+
+.correspond img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.correspond span {
+    margin-left: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.cor_text {
+    width: 80px;
+    height: 40px;
+    margin-left: 20px;
+    display: flex;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    background-color:#c99e4b;
+    border-radius: 10px;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+
+body {
+    background-color: #faf8ef;
+    display: flex;
+    justify-content: center;
+    font-family: "Clear Sans", "Helvetica Neue"
+}
+  
+h1 {
+    font-size: 40px;
+    color: #776E65;
+    margin: 0px;
+}
+
+.game-container {
+    width:468px;
+    margin-top: 30px;
+}
+
+.game-intro {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.score-container {
+    text-align: center;
+    width: 70px;
+    height: 60px;
+    border-radius: 3px;
+    background-color: #8f7a66;
+    color:#FFFFFF;
+}
+
+#score {
+    font-size:30px;
+}
+
+.score-title {
+    font-size:16px;
+}
+

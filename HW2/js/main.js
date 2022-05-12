@@ -16,6 +16,8 @@ const initMap = (size, count, score) => {
     const map = []
     const bonusRecord = initBonus(size, count);
 
+    console.log(bonusRecord)
+
     for (let row = 0; row < size.width; row++) {
         const rowItem = [];
 
@@ -26,7 +28,7 @@ const initMap = (size, count, score) => {
             }
 
             rowItem.push({
-                bonus: score
+                bonus: Math.floor(Math.random() * score) + 1
             })
         }
         map.push(rowItem)
@@ -167,7 +169,7 @@ const loadImages = async () => {
 }
 const main = async () => {
     map = initMap(MAP_SIZE, BONUS_COUNT, BONUS_SCORE)
-    console.log(map)
+    //console.log(map)
 
     await loadImages()
     drawMap(map)
