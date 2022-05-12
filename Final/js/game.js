@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const gridDisplay = document.querySelector('.grid')
-    const scoreDisplay = document.getElementById('score')
-    const resultDisplay = document.getElementById('result')
+    const gridElement = document.querySelector('.grid')
+    const scoreElement = document.getElementById('score')
+    const resultElement = document.getElementById('result')
     const width = 4
     let cells = []
     let score = 0
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             //create grid cells
             cell = document.createElement('div')
             cell.innerHTML = 0;
-            gridDisplay.appendChild(cell)
+            gridElement.appendChild(cell)
             // console.log('yes')
             cells.push(cell)
         }
@@ -36,43 +36,43 @@ document.addEventListener('DOMContentLoaded', () => {
                 //cells[i].appendChild('img')
             }
             else if (cells[i].innerHTML == 4) {
-                cells[i].style.backgroundColor = '#ede0c8'
+                //cells[i].style.backgroundColor = '#ede0c8'
                 cells[i].style.backgroundImage = 'url("../img/HIT.png")'
             }
             else if (cells[i].innerHTML == 8) {
-                cells[i].style.backgroundColor = '#f2b179'
+                //cells[i].style.backgroundColor = '#f2b179'
                 cells[i].style.backgroundImage = 'url("../img/NKU.png")'
             }
             else if (cells[i].innerHTML == 16) {
-                cells[i].style.backgroundColor = '#ffcea4'
+                //cells[i].style.backgroundColor = '#ffcea4'
                 cells[i].style.backgroundImage = 'url("../img/TJU.png")'
             }
             else if (cells[i].innerHTML == 32) {
-                cells[i].style.backgroundColor = '#e8c064'
+                //cells[i].style.backgroundColor = '#e8c064'
                 cells[i].style.backgroundImage = 'url("../img/ZJU.png")'
             }
             else if (cells[i].innerHTML == 64) {
-                cells[i].style.backgroundColor = '#ffab6e'
+                //cells[i].style.backgroundColor = '#ffab6e'
                 cells[i].style.backgroundImage = 'url("../img/USTC.png")'
             }
             else if (cells[i].innerHTML == 128) {
-                cells[i].style.backgroundColor = '#fd9982'
+                //cells[i].style.backgroundColor = '#fd9982'
                 cells[i].style.backgroundImage = 'url("../img/RUC.png")'
             }
             else if (cells[i].innerHTML == 256) {
-                cells[i].style.backgroundColor = '#ead79c'
+                //cells[i].style.backgroundColor = '#ead79c'
                 cells[i].style.backgroundImage = 'url("../img/PKU.png")'
             }
             else if (cells[i].innerHTML == 512) {
-                cells[i].style.backgroundColor = '#76daff'
+                //cells[i].style.backgroundColor = '#76daff'
                 cells[i].style.backgroundImage = 'url("../img/THU.png")'
             }
             else if (cells[i].innerHTML == 1024) {
-                cells[i].style.backgroundColor = '#beeaa5'
+                //cells[i].style.backgroundColor = '#beeaa5'
                 cells[i].style.backgroundImage = 'url("../img/FDU.jpeg")'
             }
             else if (cells[i].innerHTML == 2048) {
-                cells[i].style.backgroundColor = '#d7d4f0'
+                //cells[i].style.backgroundColor = '#d7d4f0'
                 cells[i].style.backgroundImage = 'url("../img/SJTU.png")'
             }
         }
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cells[i].innerHTML = mergedNumber
                 cells[i + 1].innerHTML = 0
                 score += mergedNumber
-                scoreDisplay.innerHTML = score
+                scoreElement.innerHTML = score
             }
         }
         checkWin()
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cells[i].innerHTML = mergedNumber
                 cells[i + width].innerHTML = 0
                 score += mergedNumber
-                scoreDisplay.innerHTML = score
+                scoreElement.innerHTML = score
             }
         }
         checkWin()
@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkWin() {
         for (let i = 0; i < width * width; i++) {
             if (cells[i].innerHTML == 2048) {
-                resultDisplay.innerHTML = '你获胜了'
+                resultElement.innerHTML = '你获胜了'
                 document.removeEventListener('keyup', control)
             }
         }
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         if (zeros === 0) {
-            resultDisplay.innerHTML = '你输了'
+            resultElement.innerHTML = '你输了'
             document.removeEventListener('keyup', control)
         }
     }

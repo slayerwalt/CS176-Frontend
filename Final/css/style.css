@@ -75,6 +75,7 @@
 body {
     background-color: #faf8ef;
     display: flex;
+    align-items: flex-end;
     justify-content: center;
     font-family: "Clear Sans", "Helvetica Neue"
 }
